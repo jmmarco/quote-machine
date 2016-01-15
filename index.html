@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quote Generator</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="page-header">
-            <h1>Quote Machine</h1>
-        </div>
+    <div class="container-fluid">
         <div class="jumbotron">
-            <p class="quotes"></p>
+            <h1 class="quotes"></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <a href="#" id="button" data-toggle="tooltip" data-placement="left" title="Get new quote"><i class="fa fa-refresh fa-5x"></i></a>
+                <a href="#" id="twitter" data-toggle="tooltip" data-placement="bottom" title="Tweet this quote"><i class="fa fa-twitter fa-5x"></i></a>
+                <a href="#" id="bg-refresh" data-toggle="tooltip" data-placement="bottom" title="Toggle background image"><i class="fa fa-picture-o fa-5x"></i></a>
+                <a href="#" id="font-toggle" data-toggle="tooltip" data-placement="right" title="Toggle font color"><i class="fa fa-font fa-5x"></i></a>
+            </div>
+
         </div>
     </div>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
