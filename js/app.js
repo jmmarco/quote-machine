@@ -34,8 +34,8 @@ var main = {
                 'url(https://source.unsplash.com/category/technology/600x303)', 'url(https://source.unsplash.com/category/technology/600x304)'
             ];
             var randomUrl = urls[Math.floor(Math.random() * urls.length)];
-            $('.jumbotron').fadeOut(1200).fadeIn(900);
-            $('.jumbotron').css('background-image', randomUrl);
+            $('.jumbotron').fadeOut(600);
+            $('.jumbotron').css('background-image', randomUrl).fadeIn(1100);
         });
 
         // Make sure jumbotron font color defaults to white
