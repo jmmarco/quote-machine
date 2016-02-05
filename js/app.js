@@ -3,13 +3,17 @@ var main = {
     quotes: ["Let go off the ego -- Anonymous", "Embrace failure, when it happens don't freak out. Learn from it -- Anonymous",
         "Fail fast and make changes quickly -- Anonymous", "Become vulnerable, don't be afraid to admit mistakes -- Anonymous",
         "Leave your old self behind -- Anonymous", "I find your lack of faith disturbing. -- Darth Vader",
-        "Your focus determines your reality –- Qui-Gon Jinn", "Do. Or do not. There is no try. -- Yoda"
+        "Your focus determines your reality –- Qui-Gon Jinn", "Do. Or do not. There is no try. -- Yoda",
+        "You want to do projects that are inspiring and make people excited about the future. -- Elon Musk"
     ],
     display: function() {
         // Randomize the quotes array and display them
         var randomizer = main.quotes[Math.floor(Math.random() * main.quotes.length)];
         $('.jumbotron').fadeIn(900);
         $('.quotes').html(randomizer);
+
+        // TODO: See for more randomness
+        // http://stackoverflow.com/questions/5836833/create-a-array-with-random-values-in-javascript
 
         // Activate Tooltips and set trigger mode
         $('[data-toggle="tooltip"]').tooltip({
